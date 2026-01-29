@@ -212,25 +212,21 @@
                     <a href=""><img src="images/icons/insta.png" alt=""></a>
                 </div>
             </div>
-          ‎<form class="form" action="#" method="post">
-‎    <h2>Let’s Message Me</h2>
-‎
-‎    <div>
-‎        <input type="text" name="name" id="name" placeholder="Your Name" required>
-‎    </div>
-‎
-‎    <div>
-‎        <input type="email" name="email" id="email" placeholder="Your Email" required>
-‎    </div>
-‎
-‎    <div>
-‎        <textarea rows="10" name="message" id="message" placeholder="Message" required></textarea>
-‎    </div>
-‎
-‎    <!-- Add your public key -->
-‎    <div class="cf-turnstile" data-sitekey="0x4AAAAAACUsa-zJ8337KSJA"></div>
-                <input class="btn" type="submit" value="Submit">
-            </form>
+          ‎<form action="send.php" method="post" id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <!-- Add your public key -->
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAACUsa-zJ8337KSJA" ></div>
+
+    <input type="submit" value="Submit" id="submitButton">
+          </form>
         </section>
     </footer>
 
